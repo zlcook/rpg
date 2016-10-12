@@ -1,0 +1,18 @@
+Item Data File
+==============
+
+This text file contains tabular data about each item in the game. You may
+use this data in any way you wish in the source code of your program. It is
+provided so that you don't have to work out the exact attributes and
+placements of each item.
+
+Note that the image file for each item is in the "assets/items"
+directory.
+
+Name                Image file     Effect           Position (x, y) in pixels
+-----------------------------------------------------------------------------
+Amulet of Vitality  amulet.png     HP/Max HP +80    965, 3563
+Sword of Strength   sword.png      Damage +30       546, 6707
+Tome of Agility     tome.png       Cooldown -300    4791, 1253 
+Elixir of Life      elixir.png     None             1976, 402
+

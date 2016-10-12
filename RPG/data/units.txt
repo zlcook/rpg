@@ -1,0 +1,181 @@
+Unit Data File
+==============
+
+This text file contains tabular data about each unit in the game. You may use
+this data in any way you wish in the source code of your program. It is
+provided so that you don't have to work out the exact attributes and
+placements of each unit.
+
+There are two sections. The "general unit data" section contains a table with
+a row for each unit *type*. The "specific unit data" section contains a table
+with a row for each actual unit instance. For example,there are many Zombies
+in the game -- the general table has one row for "Zombie". The specific table
+has a row for each Zombie featured in the game.
+
+General unit data
+=================
+
+Note that the image file for each unit is in the "assets/units" directory.
+
+Name            Image file      Type        Monster Type    HP      Damage  Cooldown
+------------------------------------------------------------------------------------
+(Player)*       player.png      Player      N/A             100     26      600
+
+Prince Aldric   prince.png      Villager    N/A             1       0       0
+Elvira          shaman.png      Villager    N/A             1       0       0
+Garth           peasant.png     Villager    N/A             1       0       0
+
+Giant Bat       dreadbat.png    Monster     Passive         40      0       0
+Zombie          zombie.png      Monster     Aggressive      60      10      800
+Bandit          bandit.png      Monster     Aggressive      40      8       200
+Skeleton        skeleton.png    Monster     Aggressive      100     16      500
+Draelic         necromancer.png Monster     Aggressive      140     30      400
+
+* The player's attributes may be affected by items. These are the starting
+  attributes.
+
+Specific unit data
+==================
+
+This table shows the starting position of each unit in the game.
+
+General type    Start position (x,y) in pixels
+-----------------------------------------------
+Player          756,684
+
+Prince Aldric   467,679
+Elvira          738,549
+Garth           756,870
+
+Giant Bat       1431,864
+Giant Bat       1154,1321
+Giant Bat       807,2315
+Giant Bat       833,2657
+Giant Bat       1090,3200
+Giant Bat       676,3187
+Giant Bat       836,3966
+Giant Bat       653,4367
+Giant Bat       1343,2731
+Giant Bat       1835,3017
+Giant Bat       1657,3954
+Giant Bat       1054,5337
+Giant Bat       801,5921
+Giant Bat       560,6682
+Giant Bat       1275,5696
+Giant Bat       1671,5991
+Giant Bat       2248,6298
+Giant Bat       2952,6373
+Giant Bat       3864,6695
+Giant Bat       4554,6443
+Giant Bat       4683,6228
+Giant Bat       5312,6606
+Giant Bat       5484,5946
+Giant Bat       6371,5634
+Giant Bat       5473,3544
+Giant Bat       5944,3339
+Giant Bat       6301,3414
+Giant Bat       6388,1994
+Giant Bat       6410,1584
+Giant Bat       5314,274
+
+Zombie       681,3201
+Zombie       691,4360
+Zombie       2166,2650
+Zombie       2122,2725
+Zombie       2284,2962
+Zombie       2072,4515
+Zombie       2006,4568
+Zombie       2385,4629
+Zombie       2446,4590
+Zombie       2517,4532
+Zombie       4157,6730
+Zombie       4247,6620
+Zombie       4137,6519
+Zombie       4234,6449
+Zombie       5879,4994
+Zombie       5954,4928
+Zombie       6016,4866
+Zombie       5860,4277
+Zombie       5772,4277
+Zombie       5715,4277
+Zombie       5653,4277
+Zombie       5787,797
+Zombie       5668,720
+Zombie       5813,454
+Zombie       5236,917
+Zombie       5048,1062
+Zombie       4845,996
+Zombie       4496,575
+Zombie       3457,273
+Zombie       3506,779
+Zombie       3624,1192
+Zombie       2931,1396
+Zombie       2715,1326
+Zombie       2442,1374
+Zombie       2579,1159
+Zombie       2799,1269
+Zombie       2768,739
+Zombie       2099,956
+
+Bandit       1889,2581
+Bandit       4502,6283
+Bandit       5248,6581
+Bandit       5345,6678
+Bandit       5940,3412
+Bandit       6335,3459
+Bandit       6669,260
+Bandit       6598,339
+Bandit       6598,528
+Bandit       6435,528
+Bandit       6435,678
+Bandit       5076,1082
+Bandit       5191,1187
+Bandit       4940,1175
+Bandit       4760,1039
+Bandit       4883,889
+Bandit       4427,553
+Bandit       3559,162
+Bandit       3779,1553
+Bandit       3573,1553
+Bandit       3534,2464
+Bandit       3635,2464
+Bandit       3402,2861
+Bandit       3151,2857
+Bandit       3005,2997
+Bandit       2763,2263
+Bandit       2648,2263
+Bandit       2621,1337
+Bandit       2907,1270
+Bandit       2331,598
+Bandit       2987,394
+Bandit       1979,394
+Bandit       2045,693
+Bandit       2069,1028
+
+Skeleton       1255,2924
+Skeleton       2545,4708
+Skeleton       4189,6585
+Skeleton       5720,622
+Skeleton       5649,767
+Skeleton       5291,312
+Skeleton       5256,852
+Skeleton       4790,976
+Skeleton       4648,401
+Skeleton       3628,1181
+Skeleton       3771,1181
+Skeleton       3182,2892
+Skeleton       3116,3033
+Skeleton       2803,2901
+Skeleton       2850,2426
+Skeleton       2005,1524
+Skeleton       2132,1427
+Skeleton       2242,1343
+Skeleton       2428,771
+Skeleton       2427,907
+Skeleton       2770,613
+Skeleton       2915,477
+Skeleton       1970,553
+Skeleton       2143,1048
+
+
+Draelic         2069,510

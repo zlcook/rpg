@@ -1,0 +1,26 @@
+Villager dialogue
+=================
+
+Prince Aldric:
+    If the player is not holding the elixir:
+        "Please seek out the Elixir of Life to cure the king."
+    Else:
+        "The elixir! My father is cured! Thank you!"
+
+Elvira:
+    If the player was on full health:
+        "Return to me if you ever need healing."
+    If the player needed healing:
+        "You're looking much healthier now."
+
+Garth:
+    If the player is not holding the amulet:
+        "Find the Amulet of Vitality, across the river to the west."
+    Else if the player is not holding the sword:
+        "Find the Sword of Strength - cross the bridge to the east, then head south."
+    Else if the player is not holding the tome:
+        "Find the Tome of Agility, in the Land of Shadows."
+    Else:
+        "You have found all the treasure I know of."
+
+   
