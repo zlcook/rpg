@@ -99,41 +99,46 @@ public class Villagers extends Unit implements PlayerChatObserver,PlayerMoveObse
 	}
 	@Override
 	public void chatAction(Player player,double posx, double posy, double delta) {
-		//检查player距离是否在50像素之内
-		double dist =DistUtils.dist(posx, posy,this.getPosx(), this.getPosy());
-		//距离小于50像素
-		if( dist<=50){
-			//确定交谈内容
-			String chats[]=null;
-			if( this.getName().equalsIgnoreCase("PrinceAldric")){
-				chats =chatmsg.get("PrinceAldric");
-				if( !player.isElixir() ){
-					chat= chats[0];
-				}else{
-					chat = chats[1];
-					player.removeItem("elixir");
-				}
-			}else if(this.getName().equalsIgnoreCase("Elvira")){
-				chats =chatmsg.get("Elvira");
-				if(player.getHP()<player.getMAX_HP()){
-					chat=chats[1];
-					//加血
-					player.setHP(player.getMAX_HP());
-				}else
-					chat = chats[0];
-			}else if(this.getName().equalsIgnoreCase("Garth")){
-				chats =chatmsg.get("Garth");
-				if( player.getItem("amulet")==null ){
-					chat= chats[0];
-				}else if(player.getItem("sword")==null ){
-					chat=chats[1];
-				}else if(player.getItem("tome")==null ){
-					chat = chats[2];
-				}else 
-					chat=chats[3];
+
+		//正在显示会话则不处理
+		if( !chatvisible ){
+			//检查player距离是否在50像素之内
+			double dist =DistUtils.dist(posx, posy,this.getPosx(), this.getPosy());
+			//距离小于50像素
+			if( dist<=50){
+					//确定交谈内容
+					String chats[]=null;
+					if( this.getName().equalsIgnoreCase("PrinceAldric")){
+						chats =chatmsg.get("PrinceAldric");
+						if( !player.isElixir() ){
+							chat= chats[0];
+						}else{
+							chat = chats[1];
+							player.removeItem("elixir");
+						}
+					}else if(this.getName().equalsIgnoreCase("Elvira")){
+						chats =chatmsg.get("Elvira");
+						if(player.getHP()<player.getMAX_HP()){
+							chat=chats[1];
+							//加血
+							player.setHP(player.getMAX_HP());
+						}else
+							chat = chats[0];
+	
+					}else if(this.getName().equalsIgnoreCase("Garth")){
+						chats =chatmsg.get("Garth");
+						if( player.getItem("amulet")==null ){
+							chat= chats[0];
+						}else if(player.getItem("sword")==null ){
+							chat=chats[1];
+						}else if(player.getItem("tome")==null ){
+							chat = chats[2];
+						}else 
+							chat=chats[3];
+					}
+				//显示会话
+				chatvisible=true;
 			}
-			//显示会话
-			chatvisible=true;
 		}
 	}
 	@Override
