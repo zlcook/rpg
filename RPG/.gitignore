@@ -1,7 +1,7 @@
 /classess/
 /.settings/
 .log
-.zip
+*.zip
 .classpath
 .project
 .DS_Store

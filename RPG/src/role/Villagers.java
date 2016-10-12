@@ -140,7 +140,7 @@ public class Villagers extends Unit implements PlayerChatObserver,PlayerMoveObse
 	public void action(Player player, double posx, double posy, double delta) {
 		// TODO Auto-generated method stub
 		//检查player距离是否在50像素之内
-		double dist =DistUtils.dist(posx, posy,this.getPosx(), this.getPosy());
+		/*double dist =DistUtils.dist(posx, posy,this.getPosx(), this.getPosy());
 		//距离小于50像素
 		if( dist<=50){
 			//加血
@@ -150,6 +150,6 @@ public class Villagers extends Unit implements PlayerChatObserver,PlayerMoveObse
 					player.setHP(player.getMAX_HP());
 				}
 			}
-		}
+		}*/
 	}
 }
