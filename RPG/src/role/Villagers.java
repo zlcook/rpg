@@ -100,8 +100,6 @@ public class Villagers extends Unit implements PlayerChatObserver,PlayerMoveObse
 	@Override
 	public void chatAction(Player player,double posx, double posy, double delta) {
 
-		//正在显示会话则不处理
-		if( !chatvisible ){
 			//检查player距离是否在50像素之内
 			double dist =DistUtils.dist(posx, posy,this.getPosx(), this.getPosy());
 			//距离小于50像素
@@ -118,13 +116,20 @@ public class Villagers extends Unit implements PlayerChatObserver,PlayerMoveObse
 						}
 					}else if(this.getName().equalsIgnoreCase("Elvira")){
 						chats =chatmsg.get("Elvira");
-						if(player.getHP()<player.getMAX_HP()){
-							chat=chats[1];
-							//加血
-							player.setHP(player.getMAX_HP());
-						}else
-							chat = chats[0];
-	
+						//正在显示会话，则处理加血内容
+						if( chatvisible ){
+							if(player.getHP()<player.getMAX_HP()){
+								//加血
+								player.setHP(player.getMAX_HP());
+							}
+						}else{
+							if(player.getHP()<player.getMAX_HP()){
+								chat=chats[1];
+								//加血
+								player.setHP(player.getMAX_HP());
+							}else
+								chat = chats[0];
+						}
 					}else if(this.getName().equalsIgnoreCase("Garth")){
 						chats =chatmsg.get("Garth");
 						if( player.getItem("amulet")==null ){
@@ -139,7 +144,7 @@ public class Villagers extends Unit implements PlayerChatObserver,PlayerMoveObse
 				//显示会话
 				chatvisible=true;
 			}
-		}
+		
 	}
 	@Override
 	public void action(Player player, double posx, double posy, double delta) {
