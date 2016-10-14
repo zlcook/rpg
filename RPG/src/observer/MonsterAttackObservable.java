@@ -2,7 +2,8 @@ package observer;
 /**
 * @author 周亮 
 * @version 创建时间：2016年10月10日 下午4:46:46
-* 类说明:被监听的攻击者
+* 被观察者接口。
+* 怪兽实现该接口可以管理监听自己攻击动作的目标类，目标类要实现MonsterAttackObserver接口.
 */
 public interface MonsterAttackObservable {
 	//增加一个观察者

@@ -4,7 +4,12 @@ import org.newdawn.slick.Color;
 import org.newdawn.slick.Graphics;
 import org.newdawn.slick.Image;
 import org.newdawn.slick.SlickException;
-
+/**
+ * 
+ * @author dell
+ * 游戏中所有人物角色的基类，该类描述了角色的最基本属性和提供基本的方法render、update、cutHp、comeBack等，
+ * 如果子类想要实现自己的需求可以重写这些方法。
+ */
 public class Unit {
 	// In pixels
     private double posx;

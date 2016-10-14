@@ -2,7 +2,9 @@ package observer;
 /**
 * @author 周亮 
 * @version 创建时间：2016年10月10日 下午4:46:10
-* 类说明:监听攻击事件的监听者
+
+* 观察者接口。
+* monster实现该接口可以监听player的攻击动作.
 */
 public interface PlayerAttackObserver {
 	/**

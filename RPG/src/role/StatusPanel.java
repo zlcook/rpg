@@ -13,7 +13,8 @@ import observer.PlayerMoveObserver;
 /**
 * @author 周亮 
 * @version 创建时间：2016年10月9日 下午6:57:29
-* 类说明
+* 
+* 显示player的Health、Damage、rate、Items信息
 */
 public class StatusPanel implements PlayerMoveObserver{
 

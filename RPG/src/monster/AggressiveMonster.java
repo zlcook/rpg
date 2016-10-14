@@ -19,6 +19,8 @@ import role.World;
 * @author 周亮 
 * @version 创建时间：2016年10月9日 下午2:49:28
 * 类说明
+* 描述主动怪兽信息的类。
+* 该类监听了player的移动、攻击动作，当player作出相应动作时从而做出反应。
 */
 public class AggressiveMonster extends Unit implements PlayerMoveObserver ,MonsterAttackObservable,PlayerAttackObserver{
 

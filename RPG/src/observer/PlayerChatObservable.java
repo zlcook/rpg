@@ -2,7 +2,9 @@ package observer;
 /**
 * @author 周亮 
 * @version 创建时间：2016年10月12日 上午10:50:29
-* 类说明：player通过该接口添加和删除监听player的会话动作。
+* 被观察者接口。
+* player通过该接口添加和删除监听player的会话动作。
+* player实现该接口可以管理监听自己会话(chat)动作的目标类，目标类要实现PlayerChatObserver接口.  
 */
 public interface PlayerChatObservable {
 	//增加一个观察者

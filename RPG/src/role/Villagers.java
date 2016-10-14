@@ -12,8 +12,9 @@ import observer.PlayerMoveObserver;
 * @author 周亮 
 * @version 创建时间：2016年10月9日 上午10:45:30
 * 类说明
+* 村民角色描述类
 */
-public class Villagers extends Unit implements PlayerChatObserver,PlayerMoveObserver {
+public class Villagers extends Unit implements PlayerChatObserver {
 
 	/**
 	 * 每次交谈的内容
@@ -146,20 +147,5 @@ public class Villagers extends Unit implements PlayerChatObserver,PlayerMoveObse
 			}
 		
 	}
-	@Override
-	public void action(Player player, double posx, double posy, double delta) {
-		// TODO Auto-generated method stub
-		//检查player距离是否在50像素之内
-		/*double dist =DistUtils.dist(posx, posy,this.getPosx(), this.getPosy());
-		//距离小于50像素
-		if( dist<=50){
-			//加血
-			if(this.getName().equalsIgnoreCase("Elvira")){
-				if(player.getHP()<player.getMAX_HP()){
-					//加血
-					player.setHP(player.getMAX_HP());
-				}
-			}
-		}*/
-	}
+	
 }

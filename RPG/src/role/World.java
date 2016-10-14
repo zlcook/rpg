@@ -138,8 +138,7 @@ public class World
      		for( int i =0;i < records.size();i++){
      			Record rec = records.get(i);
      			Villagers vl = new Villagers(RPG.ASSETS_PATH+"/units/prince.png",  rec.getPosx(), rec.getPosy(),1,0,0,rec.getName()); 
-     			player2.addMoveObserver(vl);
-     			player2.addChatObserver(vl);
+     		player2.addChatObserver(vl);
      			villagers.add(vl);
      		}
      	}
@@ -148,8 +147,7 @@ public class World
       		for( int i =0;i < records.size();i++){
       			Record rec = records.get(i);
       			Villagers vl = new Villagers(RPG.ASSETS_PATH+"/units/shaman.png",  rec.getPosx(), rec.getPosy(),1,0,0,rec.getName()); 
-      			player2.addMoveObserver(vl);
-     			player2.addChatObserver(vl);
+      			player2.addChatObserver(vl);
       			villagers.add(vl);
       		}
       	}
@@ -158,8 +156,7 @@ public class World
       		for( int i =0;i < records.size();i++){
       			Record rec = records.get(i);
       			Villagers vl = new Villagers(RPG.ASSETS_PATH+"/units/peasant.png",  rec.getPosx(), rec.getPosy(),1,0,0,rec.getName()); 
-      			player2.addMoveObserver(vl);
-     			player2.addChatObserver(vl);
+      			player2.addChatObserver(vl);
       			villagers.add(vl);
       		}
       	}

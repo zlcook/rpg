@@ -7,6 +7,7 @@ import role.World;
 * @author 周亮 
 * @version 创建时间：2016年10月10日 上午9:49:59
 * 类说明
+* 距离工具类，该类提供了计算两个物体坐标之间的直线距离
 */
 public class DistUtils {
 

@@ -15,6 +15,9 @@ import role.RPG;
 * @author 周亮 
 * @version 创建时间：2016年10月10日 下午8:58:08
 * 类说明
+* 读取和存储配置文件unit.dat中信息的类。
+* 该类只会实例化一次，因为配置文件只会在游戏启动是读取一次，所以该类被设计成单例模式。
+* 在World中villagers、monster的初始化数据都会调用该类的getRecords(String name)来获取。
 */
 public class UnitsData {
 

@@ -5,7 +5,14 @@ import org.newdawn.slick.SlickException;
 
 import observer.PlayerMoveObserver;
 import role.Player;
-
+/**
+ * 
+ * @author dell
+ *游戏中所有道具物品（Amulet、Elixir、Sword、Tome）的基类。
+ *该类实现了监听player移动的接口，这样player移动时就可以判断player到自己的距离，
+ *当物品监测到player距离自己50像素之内时，物品就会消失。
+ *
+ */
 public class Item implements PlayerMoveObserver{
 	private Image img;
 	private double posx;

@@ -14,6 +14,8 @@ import role.World;
 * @author 周亮 
 * @version 创建时间：2016年10月9日 下午2:02:56
 * 类说明
+* 描述被动怪兽信息的类。
+* 该类监听了player的攻击动作，当player作出相应动作时从而做出反应。
 */
 public class PassiveMonster extends Unit implements PlayerAttackObserver{
 	private static double SPEED = 0.2;
