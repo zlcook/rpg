@@ -27,3 +27,8 @@
 -Djava.library.path="G:\shadowquest\lwjgl-2.9.1\native\windows"
 
 然后run as ->java application就可以了。
+
+# 效果
+![image](https://github.com/wylc/rgp/blob/master/%E6%95%88%E6%9E%9C%E5%9B%BE%E7%89%87.jpg?raw=true)
+![image](https://github.com/wylc/rgp/blob/master/%E6%95%88%E6%9E%9C%E5%9B%BE%E7%89%872.jpg)
+![image](https://github.com/wylc/rgp/blob/master/%E6%B8%B8%E6%88%8F%E7%95%8C%E9%9D%A2.jpg)
